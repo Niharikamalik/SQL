@@ -1,0 +1,15 @@
+show databases;
+use school;
+show tables;
+select *from student;
+insert into student values(101,'mohit',20),(102,'rohit',21),(103,'yash',21);
+select *from student;
+create table t2(id int,age int);
+insert into t2 values(101,20),(103,23),(104,20);
+select *from student inner join t2 on student.id = t2.id;
+create table t3(age int,name varchar(100));
+select *from t3;
+insert into t3 values(20,'mahesh'),(23,'suresh'),(20,'ramesh');
+select *from student inner join t2 on student.id = t2.id inner join t3 on t2.age = t3.age;
+select *from student left join t2 on student.id = t2.id;
+select *from student right join t2 on student.id = t2.id;

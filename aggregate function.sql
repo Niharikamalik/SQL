@@ -1,0 +1,12 @@
+use classicmodels;
+show tables;
+select count(*) from orders;
+select count(comments) from orders;
+select count(distinct comments) from orders;
+show tables;
+desc payments;
+select avg(amount) from payments ;
+select avg(amount) from payments where amount >20000 ;
+select max(amount) from payments ;
+select min(amount) from payments ;
+select sum(amount) from payments ;
